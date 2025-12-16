@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Django Girls Blog{% endblock %}</title>
+    <style>
+        body {
+            width: 800px;
+            margin: 0 auto;
+            font-family: Georgia, serif;
+        }
+        header {
+            border-bottom: 2px solid #f05a28;
+            margin-bottom: 20px;
+            padding: 10px 0;
+        }
+        header a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #f05a28;
+            font-weight: bold;
+        }
+        .content {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="{% url 'post_list' %}">🏠 Início</a>
+        <a href="{% url 'about' %}">👩‍💻 Sobre mim</a>
+    </header>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
