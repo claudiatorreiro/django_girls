@@ -28,8 +28,12 @@ from blog import views  # 👈 importar a view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.post_list, name='post_list'),  # 👈 rota para a view
+    path('', views.post_list, name='post_list'),
     path('about/', views.about, name='about'),
+    path('post/new/', views.post_new, name='post_new'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
+    path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ]
+
 
 

@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+  <h1>🌟 {{ post.title }}</h1>
+  <p><small>published: {{ post.published_date }}</small></p>
+  <p>{{ post.text|linebreaks }}</p>
+
+  <hr>
+  <a href="{% url 'post_edit' pk=post.pk %}">✏️ Editar este post</a>
+{% endblock %}
