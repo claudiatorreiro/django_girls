@@ -1,38 +1,27 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{% block title %}Django Girls Blog{% endblock %}</title>
-    <style>
-        body {
-            width: 800px;
-            margin: 0 auto;
-            font-family: Georgia, serif;
-        }
-        header {
-            border-bottom: 2px solid #f05a28;
-            margin-bottom: 20px;
-            padding: 10px 0;
-        }
-        header a {
-            margin-right: 20px;
-            text-decoration: none;
-            color: #f05a28;
-            font-weight: bold;
-        }
-        .content {
-            margin-top: 20px;
-        }
-    </style>
+    <title>Django Girls Blog</title>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 </head>
 <body>
-    <header>
-        <a href="{% url 'post_list' %}">🏠 Início</a>
-        <a href="{% url 'about' %}">👩‍💻 Sobre mim</a>
+    <header class="page-header">
+        <div class="container">
+            <h1><a href="{% url 'post_list' %}">Django Girls Blog – Giza Torreiro</a></h1>
+<nav class="nav-menu">
+    <a href="{% url 'post_list' %}">🏠 Início</a> |
+    <a href="{% url 'post_new' %}">📝 Novo Post</a> |
+    <a href="{% url 'about' %}">🙋‍♀️ Sobre</a> |
+    <a href="{% url 'certificados' %}">📄 Certificados</a>
+</nav>
+
+        </div>
     </header>
 
-    <div class="content">
+    <main class="container">
         {% block content %}
         {% endblock %}
-    </div>
+    </main>
 </body>
 </html>

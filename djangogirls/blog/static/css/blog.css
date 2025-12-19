@@ -1,0 +1,88 @@
+body {
+    padding-left: 15px;
+    font-family: 'Lobster', cursive;
+}
+
+.page-header {
+    background-color: #f36f20;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, h1, h2, h3, h4 {
+    color: white;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+.date {
+    float: right;
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea,
+.post-form input {
+    width: 100%;
+}
+
+.top-menu,
+.top-menu:hover {
+    color: rgb(29, 1, 1);
+    float: right;
+    font-size: 26px;
+    margin-right: 20px;
+    margin-top: 20px;  /* 👈 ADICIONE ESTA LINHA */
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h2 a,
+.post h2 a:visited {
+    color: #f36f20;
+}
+.nav-menu {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+    color: #fdd835;
+}
+.nav-menu {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+    color: #fdd835;
+}
+.page-header h1 a {
+    text-decoration: none;
+    color: white;
+}
